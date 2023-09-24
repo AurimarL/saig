@@ -43,7 +43,7 @@ export async function generateMetadata({
       title,
       description,
       images: [image],
-      creator: "@vercel",
+      creator: "@saib",
     },
     icons: [logo],
     metadataBase: new URL(`https://${params.domain}`),
@@ -127,7 +127,7 @@ export default async function SiteLayout({
       <div className="mt-20">{children}</div>
 
       {params.domain == `demo.${process.env.NEXT_PUBLIC_ROOT_DOMAIN}` ||
-      params.domain == `platformize.co` ? (
+        params.domain == `platformize.co` ? (
         <CTA />
       ) : (
         <ReportAbuse />

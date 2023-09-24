@@ -5,6 +5,7 @@ import { Card, Metric, Text, AreaChart, BadgeDelta, Flex } from "@tremor/react";
 import { useMemo } from "react";
 
 export default function OverviewStats() {
+  // TODO: need to get data from vercel
   const data = useMemo(() => {
     const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"];
     return [
